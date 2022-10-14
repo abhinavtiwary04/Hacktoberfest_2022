@@ -31,15 +31,18 @@ def pl(arr):
     print()
 
 
-arr=[]
-y=int(input("Enter the number of elements:"))
-for a in range(0,y):
-    b=int(input())
-    arr.append(b)
+if __name__=="__main__":
+    arr=[]
+    y=int(input("Enter the number of elements:"))
+    if(y!=0):
+        print("Enter the numbers:")
+    for a in range(0,y):
+        b=int(input())
+        arr.append(b)
 
 
-print("Given array:",end="\n")
-pl(arr)
-ms(arr)
-print("Sorted array:",end="\n")
-pl(arr)
+    print("Given array:",end="\n")
+    pl(arr)
+    ms(arr)
+    print("Sorted array:",end="\n")
+    pl(arr)
