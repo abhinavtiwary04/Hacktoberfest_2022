@@ -24,4 +24,4 @@ if __name__=="__main__":
     if(z==-1):
         print("Number not found in the array")
     else:
-        print("Number found at the position", z)
+        print("Number found at the position", z+1)
