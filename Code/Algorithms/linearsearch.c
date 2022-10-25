@@ -20,13 +20,14 @@ int main(void)
     int arr[y];
     
     int i;
+    
+    if(y!=0)
+        printf("Enter elements of the array - \n");
 
-  printf("Enter elements of the array - \n");
-
-  for(i=0;i<y;i++)
-  {
-    scanf("%d",&arr[i]);
-  }
+    for(i=0;i<y;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
     
     
     int x;
@@ -37,8 +38,12 @@ int main(void)
  
  
     int result = search(arr, N, x);
-    (result == -1)
-        ? printf("Element is not present in array")
-        : printf("Element is present at position %d", result+1);
+    
+    if (result == -1)
+        printf("Element is not present in array");
+        
+    else 
+        printf("Element is present at position %d", result+1);
+        
     return 0;
 }
