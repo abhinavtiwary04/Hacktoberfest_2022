@@ -1,6 +1,6 @@
 // C++ program to find 
 // factorial of given number
-#include <iostream>
+#include <iostream.h>
 
 using namespace std;
  
@@ -30,4 +30,4 @@ int main()
 
     return 0;
 }
-// This code is contributed by Shivi_Aggarwal
+// This code is contributed by somesh banode
